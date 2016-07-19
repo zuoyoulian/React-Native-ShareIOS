@@ -2,12 +2,13 @@
 import {
   Linking,
   plist,
-  AlertIOS
+  AlertIOS,
+  NativeModules
 } from 'react-native';
 
 var Buffer = require('buffer/').Buffer
 
-import openShare from 'React-Native-ShareIOS'
+var openShare = NativeModules.ShareIOS
 
 // 微信
 const WeiXin_AppID = 'wx508e4ac1aebc3477'
