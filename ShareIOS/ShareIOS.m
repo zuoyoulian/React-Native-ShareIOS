@@ -12,6 +12,9 @@
 
 RCT_EXPORT_MODULE();
 
+
+#pragma mark-分享-
+
 //  分享微博
 RCT_EXPORT_METHOD(shareToWeiboWithInfo:(NSDictionary *)info logo:(NSString *)logo appKey:(NSString *)appKey callback:(RCTResponseSenderBlock)callback){
     
@@ -79,8 +82,11 @@ RCT_EXPORT_METHOD(shareToWeixinWithInfo:(NSDictionary *)info appid:(NSString *)a
     NSData *output=[NSPropertyListSerialization dataWithPropertyList:@{appid:dic} format:NSPropertyListBinaryFormat_v1_0 options:0 error:nil];
     [[UIPasteboard generalPasteboard] setData:output forPasteboardType:@"content"];
     
-    callback(@[info]);
+    callback(@[]);
 }
+
+
+#pragma mark-登录-
 
 //  QQ登录
 RCT_EXPORT_METHOD(qqLoginAppID:(NSString *)appid callback:(RCTResponseSenderBlock)callback) {
