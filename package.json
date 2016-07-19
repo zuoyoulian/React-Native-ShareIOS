@@ -1,0 +1,23 @@
+{
+  "name": "React-Native-ShareIOS",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zuoyoulian/React-Native-ShareIOS.git"
+  },
+  "keywords": [
+    "share",
+    "react-native"
+  ],
+  "author": "",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/zuoyoulian/React-Native-ShareIOS/issues"
+  },
+  "homepage": "https://github.com/zuoyoulian/React-Native-ShareIOS#readme"
+}
