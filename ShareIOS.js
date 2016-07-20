@@ -26,7 +26,7 @@ export default class Share {
   // 判断是否安装
   IsQQInstalled() {
     return new Promise(function(resolve, reject){
-      Linking.canOpenURL('weixin://').then(function(ret){
+      Linking.canOpenURL('mqqapi://').then(function(ret){
         resolve(ret)
       })
     })
