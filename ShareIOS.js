@@ -121,6 +121,32 @@ export default class Share {
   }
 }
 
+
+// 处理openurl回调
+/**
+   参数：
+   returnedURL: 回调回来的url地址；
+   model: 登录或分享的平台；  0 微信平台，1 微博平台， 2 QQ平台； 
+**/
+  handleOpenURL(returnedURL, model, callBack) {
+  
+    // 平台申请的应用的appID，传给oc端，用来处理不同平台的数据；
+	var appID = null;
+	if(model === 0) {  // 微信
+		appID = WeiXin_AppID
+	} else if(model === 1){ // 微博
+		appID = Weibo_AppID
+	} else { // QQ
+		appID = QQ_AppID.toString()
+	}
+	
+	openShare.handleOpenURL(returnedURL, appID, (result) => {
+	  // 将返回的数据回调给调用处
+	  callBack(result)
+	});
+  }
+}
+
 module.exports = new Share();
 
 
