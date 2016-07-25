@@ -21,11 +21,11 @@ rnpm link React-Native-ShareIOS
 			<string>RNShare</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>wx508e4ac1aebc3477</string>
-				<string>tencent1105466267</string>
-				<string>tencent1105466267.content</string>
-				<string>QQ41E4139B</string>
-				<string>wb3196575651</string>
+				<string>wx`xxxxxxxxxx`</string>
+				<string>tencent`xxxxxxxxx`</string>
+				<string>tencent`xxxxxxxx`.content</string>
+				<string>`xxxxxxxxx`</string>
+				<string>wb`xxxxxxxxx`</string>
 			</array>
 		</dict>
 	</array>

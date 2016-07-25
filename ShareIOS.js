@@ -11,15 +11,15 @@ var Buffer = require('buffer/').Buffer
 var openShare = NativeModules.ShareIOS
 
 // 微信
-const WeiXin_AppID = 'wx508e4ac1aebc3477'
-const WeiXin_AppSecret = 'ab15ba53168f8760115d413fb0342e06'
+const WeiXin_AppID = 'xxxxxxxxxxxxxx'
+const WeiXin_AppSecret = 'xxxxxxxxxxxxxxxx'
 const WeiXin_dict = {'result': '1', 'sdkver': '1.5', 'command': '1010', 'returnFromApp': '0'}
 // 微博
-const Weibo_AppID = '12344544'
-const Weibo_AppKey = '3196575651'
+const Weibo_AppID = 'xxxxxxxxxxxxxx'
+const Weibo_AppKey = 'xxxxxxxxxxxxx'
 // QQ
-const QQ_AppID = 1105466267
-const QQ_AppKey = 'KHZnREw7p78ZgCD6'
+const QQ_AppID = 1234567890
+const QQ_AppKey = 'xxxxxxxxxxxxxx'
 
 export default class Share {
   
